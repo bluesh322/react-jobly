@@ -1,15 +1,33 @@
 # React-Jobly Frontend Component Heirarchy
 
-## App --wrapper for whole app
--   No props or state
+## App 
+* wrapper for whole app
+- No props or state
 
-### companies
+### Routes
+- BrowserRouter
+    - Routes ("/", "/login", "signup")
+    - PrivateRoutes ("/companies", "/jobs")
+- State?
+- Props?
+#### Companies
+    - CompaniesList ("/companies")
+    - CompanyDetails ("/companies/:handle")
+- State?
+- Props?
 
-### jobs
+#### Jobs
+    - JobList ("/jobs")
+    - JobDetails ("/jobs/:id")
+- State?
+- Props?
 
-### applications
-
-### users
+#### Auth/Users
+    - login ("/login")
+    - signup ("/signup")
+    - profile ("/profile")
+- State?
+- Props?
 
 
 # Getting Started with Create React App
