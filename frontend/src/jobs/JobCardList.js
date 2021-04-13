@@ -13,7 +13,7 @@ const JobCardList = ({ jobs }) => {
             salary={salary}
             equity={equity}
             companyName={companyName}
-            key={title}
+            key={id}
           />
         );
       })}

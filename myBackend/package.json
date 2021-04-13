@@ -18,19 +18,19 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "bcrypt": "^5.0.1",
+    "bcrypt": "^5.0.0",
     "body-parser": "^1.19.0",
     "colors": "^1.4.0",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "jsonschema": "^1.4.0",
+    "express-validator": "^6.10.0",
+    "jsonschema": "^1.2.6",
     "jsonwebtoken": "^8.5.1",
     "morgan": "^1.10.0",
-    "pg": "^8.5.1"
+    "pg": "^8.3.0"
   },
   "devDependencies": {
-    "@material-ui/lab": "^4.0.0-alpha.57",
-    "supertest": "^5.0.0"
+    "supertest": "^5.0.0-0"
   }
 }

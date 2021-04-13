@@ -1,5 +1,11 @@
 import React, { useState } from "react";
-import { Box, TextField, FormControl, InputAdornment, IconButton } from "@material-ui/core";
+import {
+  Box,
+  TextField,
+  FormControl,
+  InputAdornment,
+  IconButton,
+} from "@material-ui/core";
 import { Search } from "@material-ui/icons";
 
 const SearchForm = ({ search }) => {
@@ -29,7 +35,13 @@ const SearchForm = ({ search }) => {
             label="Search"
             variant="outlined"
             InputProps={{
-                endAdornment: <InputAdornment position="end"><IconButton type="submit"><Search></Search></IconButton></InputAdornment>
+              endAdornment: (
+                <InputAdornment position="end">
+                  <IconButton type="submit">
+                    <Search></Search>
+                  </IconButton>
+                </InputAdornment>
+              ),
             }}
           ></TextField>
         </FormControl>

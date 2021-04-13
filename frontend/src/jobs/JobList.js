@@ -6,22 +6,14 @@ import JoblyApi from "../api"
 const JobList = () => {
   const [jobs, setJobs] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
-
   useEffect(() => {
     search();
   }, []); 
 
   const search = async (title) => {
-    let mounted = true;
     let jobs = await JoblyApi.getJobs(title);
-
-    if (mounted) {
       setJobs(jobs);
       setIsLoading(false);
-    }
-    return () => {
-      mounted = false;
-    };
   }
 
   if (isLoading) {

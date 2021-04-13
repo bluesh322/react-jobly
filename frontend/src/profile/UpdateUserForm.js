@@ -12,6 +12,7 @@ import {
   Card,
   CardContent,
 } from "@material-ui/core";
+import { Alert } from "@material-ui/lab"
 import UserContext from "../auth/UserContext";
 import JoblyApi from "../api";
 
@@ -40,7 +41,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const UpdateUserForm = () => {
-  const { currentUser } = useContext(UserContext);
+  const { currentUser, setCurrentUser } = useContext(UserContext);
   const classes = useStyles();
   const INITIAL_STATE = {
     username: currentUser.username,
@@ -51,6 +52,8 @@ const UpdateUserForm = () => {
   };
   const history = useHistory();
   const [formData, setFormData] = useState(INITIAL_STATE);
+  const [formErrors, setFormErrors] = useState([]);
+  const [saveConfirmed, setSaveConfirmed] = useState(false);
 
   const handleChange = (e) => {
     e.preventDefault();
@@ -69,18 +72,27 @@ const UpdateUserForm = () => {
       lastName: formData.lastName,
       email: formData.email,
     };
-    const username = currentUser.username;
+    const {username} = currentUser;
+    const {password} = formData;
+    let updatedUser;
     try {
-      await JoblyApi.saveProfile(username, profileData);
+      let token = await JoblyApi.login({username, password});
+      if(!token) return;
+      updatedUser = await JoblyApi.saveProfile(username, profileData);
     } catch (errors) {
+      //debugger;
+      setFormErrors(errors);
       return;
     }
-    setFormData(INITIAL_STATE);
-    history.push("/");
+    setCurrentUser(updatedUser);
+    setFormData(f => ({ ...f, password: ""}));
+    setFormErrors([]);
+    setSaveConfirmed(true);
+    history.push("/profile");
   };
 
   return (
-    <Container fullWidth="md" fixed>
+    <Container fullwidth="md" fixed>
       <Typography className={classes.root}  variant="h4">Profile</Typography>
       <Card>
         <CardContent>
@@ -150,6 +162,15 @@ const UpdateUserForm = () => {
                   value={formData.password}
                   onChange={handleChange}
                 ></TextField>
+              {formErrors.length
+                  ? <Alert severity="error">{formErrors}</Alert>
+                  : null}
+
+              {saveConfirmed
+                  ?
+                  <Alert severity="success" >Updated successfully.</Alert>
+                  : null}
+
                 <Button
                   className={classes.btn}
                   variant="contained"
