@@ -3,15 +3,28 @@
 ## App 
 * wrapper for whole app
 - No props or state
-
-### Routes
 - BrowserRouter
     - Routes ("/", "/login", "signup")
+    * btn Signup -> NewUserForm
+    * btn Login -> AuthUserForm
     - PrivateRoutes ("/companies", "/jobs")
+
+### Routes
+    - Login
+    - Signup
 - State?
 - Props?
+
+### PrivateRoutes
+    - Companies
+    - Jobs
+    - Profile
+- State?
+- Props?
+
 #### Companies
     - CompaniesList ("/companies")
+    - Search
     - CompanyDetails ("/companies/:handle")
 - State?
 - Props?
@@ -24,7 +37,10 @@
 
 #### Auth/Users
     - login ("/login")
+    * AuthUserForm
+        
     - signup ("/signup")
+    * NewUserForm
     - profile ("/profile")
 - State?
 - Props?
