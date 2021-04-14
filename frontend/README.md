@@ -2,48 +2,80 @@
 
 ## App 
 * wrapper for whole app
-- No props or state
+- No props
+- State - infoLoaded, currentUser, token, applicationIds
+- UserContext.Provider value -> (currentUser, setCurrentUser, hasAppliedForJob, applyForJob)
 - BrowserRouter
-    - Routes ("/", "/login", "signup")
-    * btn Signup -> NewUserForm
-    * btn Login -> AuthUserForm
-    - PrivateRoutes ("/companies", "/jobs")
+    - NavBar props -> logout
+    - Routes props -> login, signup
 
-### Routes
-    - Login
-    - Signup
-- State?
-- Props?
+## NavBar
+- Props: logout
+- No State
+- useContext - currentUser
+Shows different links based on currentUser status
+    - loggedInNav
+    - loggedOutNav
 
-### PrivateRoutes
-    - Companies
-    - Jobs
-    - Profile
-- State?
-- Props?
+## Routes
+- Props: login, signup
+- No State
+Location of switch for routes: Route || PrivateRoute *HOC for authentication access to route*
+    - Home - R - homepage ("/")
+    - CompaniesList - PR - list companies ("/companies")
+    - CompanyDetails - PR - show details of a company : params:handle ("/companies/:handle")
+    - JobList - PR - list jobs ("/jobs")
+    - NewUserForm - R - Signup up : props -> signup ("/signup")
+    - LoginForm - R - Login : props -> login ("/login")
+    - UpdateUserForm - PR ("/profile")
+    - Redirect - If user tries to access route that doesn't exist go to ("/")
 
-#### Companies
-    - CompaniesList ("/companies")
-    - Search
-    - CompanyDetails ("/companies/:handle")
-- State?
-- Props?
 
-#### Jobs
-    - JobList ("/jobs")
-    - JobDetails ("/jobs/:id")
-- State?
-- Props?
+## PrivateRoutes
+- props: exact, path, children
+- useContext : currentUser
+    - Directs users to "/login" for attempting to access private route
+    without auth.
 
-#### Auth/Users
+## Companies
+state - isLoading, companies
+useEffect (search())
+search - calls JoblyApi.getCompanies(name);
+    - SearchForm: props={search}
+    - CompaniesList ("/companies") -> CompanyCard: props= {key, handle, name, description, numEmployees, logoUrl}
+
+### CompanyCard
+shows Company informaiton and job list for company
+
+## JobList
+state - jobs, isLoading
+useEffect (search())
+search - calls JoblyApi.getJobs(title);
+    - SearchForm: props={search}
+    - JobCardList: props={jobs}
+
+### JobCardList
+props - jobs
+    - JobCardList -> JobCard: props={key, id, title, salary, equity, companyName }
+#### JobCard
+state - applied
+useContext - hasAppliedForJob, applyForJob
+useEffect (setApplied())
+    - Shows job information with apply button
+
+## Auth/Users
     - login ("/login")
-    * AuthUserForm
+    * LoginForm: props: login
+        - state: formData
         
     - signup ("/signup")
-    * NewUserForm
+    * NewUserForm: props: signup
+        - state: formData
+
     - profile ("/profile")
-- State?
-- Props?
+    * UpdateUserForm
+        - useContext - currentUser, setCurrentUser
+        - state: formData
 
 
 # Getting Started with Create React App
