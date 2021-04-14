@@ -61,11 +61,11 @@ const NewUserForm = ({signup}) => {
             <Typography className={classes.text} variant="h3">Welcome to jobly!</Typography>
             <form onSubmit={handleSubmit}>
                 <FormControl>
-                    <TextField className={clsx(classes.margin, classes.withoutLabel, classes.textField)} variant="outlined" label="username" name="username" value={formData.username} onChange={handleChange}></TextField>
-                    <TextField className={clsx(classes.margin, classes.withoutLabel, classes.textField)} variant="outlined" label="password" name="password" value={formData.password} onChange={handleChange}></TextField>
-                    <TextField className={clsx(classes.margin, classes.withoutLabel, classes.textField)} variant="outlined" label="firstName" name="firstName" value={formData.firstName} onChange={handleChange}></TextField>
-                    <TextField className={clsx(classes.margin, classes.withoutLabel, classes.textField)} variant="outlined" label="lastName" name="lastName" value={formData.lastName} onChange={handleChange}></TextField>
-                    <TextField className={clsx(classes.margin, classes.withoutLabel, classes.textField)} variant="outlined" label="email" name="email" value={formData.email} onChange={handleChange}></TextField>
+                    <TextField id="username" className={clsx(classes.margin, classes.withoutLabel, classes.textField)} variant="outlined" label="username" name="username" value={formData.username} onChange={handleChange}></TextField>
+                    <TextField id="password" className={clsx(classes.margin, classes.withoutLabel, classes.textField)} variant="outlined" label="password" name="password" value={formData.password} onChange={handleChange}></TextField>
+                    <TextField id="firstName" className={clsx(classes.margin, classes.withoutLabel, classes.textField)} variant="outlined" label="firstName" name="firstName" value={formData.firstName} onChange={handleChange}></TextField>
+                    <TextField id="lastName" className={clsx(classes.margin, classes.withoutLabel, classes.textField)} variant="outlined" label="lastName" name="lastName" value={formData.lastName} onChange={handleChange}></TextField>
+                    <TextField id="email" className={clsx(classes.margin, classes.withoutLabel, classes.textField)} variant="outlined" label="email" name="email" value={formData.email} onChange={handleChange}></TextField>
                     <Button className={classes.btn} variant="contained" color="primary" type="submit">Sign Up!</Button>
                 </FormControl>
             </form>      

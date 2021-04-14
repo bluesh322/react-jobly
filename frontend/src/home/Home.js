@@ -7,10 +7,10 @@ const Home = () => {
   const { currentUser } = useContext(UserContext);
   return (
     <Container maxWidth="md">
-      <h2>Jobly</h2>
+      <h2 data-testid="resolved">Jobly</h2>
       <p>All the jobs in one, convenient place</p>
       {currentUser ? (
-        <h2>Welcome Back {currentUser.username}</h2>
+        <h2 data-testid="loggedInResolved" >Welcome Back {currentUser.username}</h2>
       ) : (
           <Box>
           <Link to="/signup" key="Sign Up">

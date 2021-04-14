@@ -26,7 +26,7 @@ const JobCard = ({ id, title, salary, equity, companyName }) => {
             <Typography>Salary: {Number(salary).toLocaleString()}</Typography>
           )}
           <Typography>Equity: {equity}</Typography>
-          <Button disabled={applied} onClick={handleApply} variant="contained" size="small" color="secondary">
+          <Button data-testid="apply" disabled={applied} onClick={handleApply} variant="contained" size="small" color="secondary">
             {applied ? "Applied" : "Apply"}
           </Button>
         </CardContent>

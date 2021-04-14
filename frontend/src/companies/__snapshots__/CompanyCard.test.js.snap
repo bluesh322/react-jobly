@@ -1,0 +1,95 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot with logo 1`] = `
+<DocumentFragment>
+  <div
+    class="MuiBox-root MuiBox-root-3"
+  >
+    <a
+      href="/companies/rithm"
+    >
+      <div
+        class="MuiPaper-root MuiCard-root makeStyles-root-1 MuiPaper-elevation1 MuiPaper-rounded"
+      >
+        <div
+          class="MuiCardContent-root"
+        >
+          <h2
+            class="MuiTypography-root makeStyles-title-2 MuiTypography-body1"
+          >
+            Rithm School
+          </h2>
+          <h4
+            class="MuiTypography-root MuiTypography-body1"
+          >
+            Become an exceptional developer in 16 weeks.
+          </h4>
+        </div>
+        <div
+          class="MuiCardActions-root MuiCardActions-spacing"
+        >
+          <button
+            class="MuiButtonBase-root MuiButton-root MuiButton-text"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiButton-label"
+            />
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+        </div>
+      </div>
+    </a>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`matches snapshot without logo 1`] = `
+<DocumentFragment>
+  <div
+    class="MuiBox-root MuiBox-root-6"
+  >
+    <a
+      href="/companies/algo"
+    >
+      <div
+        class="MuiPaper-root MuiCard-root makeStyles-root-4 MuiPaper-elevation1 MuiPaper-rounded"
+      >
+        <div
+          class="MuiCardContent-root"
+        >
+          <h2
+            class="MuiTypography-root makeStyles-title-5 MuiTypography-body1"
+          >
+            Algo School
+          </h2>
+          <h4
+            class="MuiTypography-root MuiTypography-body1"
+          >
+            Become a mediocre developer in 160 weeks.
+          </h4>
+        </div>
+        <div
+          class="MuiCardActions-root MuiCardActions-spacing"
+        >
+          <button
+            class="MuiButtonBase-root MuiButton-root MuiButton-text"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiButton-label"
+            />
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+        </div>
+      </div>
+    </a>
+  </div>
+</DocumentFragment>
+`;

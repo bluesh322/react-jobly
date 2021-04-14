@@ -37,13 +37,16 @@ const App = () => {
 
   useEffect(() => {
     const getCurrentUser = async () => {
-      if (token) {
+      if (!token) {
+        setCurrentUser(null);
+      } else {
         try {
           let { username } = jwt.decode(token);
           JoblyApi.token = token;
           let currentUser = await JoblyApi.getCurrentUser(username);
           setCurrentUser(currentUser);
-          //setAppIDs
+          
+          setApplicationIds(new Set(currentUser.applications));
         } catch (errors) {
           console.error("App loadUserInfo: problem loading", errors);
           setCurrentUser(null);
@@ -106,8 +109,7 @@ const App = () => {
   return (
     <BrowserRouter>
       <UserContext.Provider
-        value={{ currentUser, setCurrentUser, hasAppliedForJob, applyForJob}}
-      >
+        value={{ currentUser, setCurrentUser, hasAppliedForJob, applyForJob}}>
         <div className="App">
           <NavBar logout={logout} />
           <Routes login={login} signup={signup}/>

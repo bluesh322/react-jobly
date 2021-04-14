@@ -1,0 +1,113 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="MuiContainer-root MuiContainer-fixed MuiContainer-maxWidthMd"
+    justifycontent="center"
+  >
+    <div
+      class="MuiBox-root MuiBox-root-7 makeStyles-root-1"
+    >
+      <h3
+        class="MuiTypography-root makeStyles-text-6 MuiTypography-h3"
+      >
+        Enter your username and password
+      </h3>
+      <form>
+        <div
+          class="MuiFormControl-root"
+        >
+          <div
+            class="MuiFormControl-root MuiTextField-root makeStyles-margin-2 makeStyles-withoutLabel-3 makeStyles-textField-4"
+          >
+            <label
+              class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined"
+              data-shrink="false"
+              for="username"
+              id="username-label"
+            >
+              username
+            </label>
+            <div
+              class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-formControl"
+            >
+              <input
+                aria-invalid="false"
+                class="MuiInputBase-input MuiOutlinedInput-input"
+                id="username"
+                name="username"
+                type="text"
+                value=""
+              />
+              <fieldset
+                aria-hidden="true"
+                class="PrivateNotchedOutline-root-8 MuiOutlinedInput-notchedOutline"
+              >
+                <legend
+                  class="PrivateNotchedOutline-legendLabelled-10"
+                >
+                  <span>
+                    username
+                  </span>
+                </legend>
+              </fieldset>
+            </div>
+          </div>
+          <div
+            class="MuiFormControl-root MuiTextField-root makeStyles-margin-2 makeStyles-withoutLabel-3 makeStyles-textField-4"
+          >
+            <label
+              class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined"
+              data-shrink="false"
+              for="password"
+              id="password-label"
+            >
+              password
+            </label>
+            <div
+              class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-formControl"
+            >
+              <input
+                aria-invalid="false"
+                class="MuiInputBase-input MuiOutlinedInput-input"
+                id="password"
+                name="password"
+                type="text"
+                value=""
+              />
+              <fieldset
+                aria-hidden="true"
+                class="PrivateNotchedOutline-root-8 MuiOutlinedInput-notchedOutline"
+              >
+                <legend
+                  class="PrivateNotchedOutline-legendLabelled-10"
+                >
+                  <span>
+                    password
+                  </span>
+                </legend>
+              </fieldset>
+            </div>
+          </div>
+          <button
+            class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-btn-5 MuiButton-containedPrimary"
+            data-testid="submit"
+            tabindex="0"
+            type="submit"
+          >
+            <span
+              class="MuiButton-label"
+            >
+              Login
+            </span>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</DocumentFragment>
+`;

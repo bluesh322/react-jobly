@@ -1,0 +1,217 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="MuiContainer-root MuiContainer-fixed MuiContainer-maxWidthLg"
+    fullwidth="md"
+  >
+    <h4
+      class="MuiTypography-root makeStyles-root-1 MuiTypography-h4"
+    >
+      Profile
+    </h4>
+    <div
+      class="MuiPaper-root MuiCard-root MuiPaper-elevation1 MuiPaper-rounded"
+    >
+      <div
+        class="MuiCardContent-root"
+      >
+        <div
+          class="MuiBox-root MuiBox-root-7 makeStyles-root-1"
+        >
+          <h3
+            class="MuiTypography-root makeStyles-text-6 MuiTypography-h3"
+          />
+          <form>
+            <div
+              class="MuiFormControl-root"
+            >
+              <div
+                class="MuiFormControl-root MuiTextField-root makeStyles-margin-2 makeStyles-withoutLabel-3 makeStyles-textField-4"
+              >
+                <label
+                  class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined Mui-disabled Mui-disabled MuiFormLabel-filled"
+                  data-shrink="true"
+                >
+                  username
+                </label>
+                <div
+                  class="MuiInputBase-root MuiOutlinedInput-root Mui-disabled Mui-disabled MuiInputBase-formControl"
+                >
+                  <input
+                    aria-invalid="false"
+                    class="MuiInputBase-input MuiOutlinedInput-input Mui-disabled Mui-disabled"
+                    disabled=""
+                    name="username"
+                    type="text"
+                    value="testuser"
+                  />
+                  <fieldset
+                    aria-hidden="true"
+                    class="PrivateNotchedOutline-root-8 MuiOutlinedInput-notchedOutline"
+                  >
+                    <legend
+                      class="PrivateNotchedOutline-legendLabelled-10 PrivateNotchedOutline-legendNotched-11"
+                    >
+                      <span>
+                        username
+                      </span>
+                    </legend>
+                  </fieldset>
+                </div>
+              </div>
+              <div
+                class="MuiFormControl-root MuiTextField-root makeStyles-margin-2 makeStyles-withoutLabel-3 makeStyles-textField-4"
+              >
+                <label
+                  class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-filled"
+                  data-shrink="true"
+                >
+                  firstName
+                </label>
+                <div
+                  class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-formControl"
+                >
+                  <input
+                    aria-invalid="false"
+                    class="MuiInputBase-input MuiOutlinedInput-input"
+                    name="firstName"
+                    type="text"
+                    value="test"
+                  />
+                  <fieldset
+                    aria-hidden="true"
+                    class="PrivateNotchedOutline-root-8 MuiOutlinedInput-notchedOutline"
+                  >
+                    <legend
+                      class="PrivateNotchedOutline-legendLabelled-10 PrivateNotchedOutline-legendNotched-11"
+                    >
+                      <span>
+                        firstName
+                      </span>
+                    </legend>
+                  </fieldset>
+                </div>
+              </div>
+              <div
+                class="MuiFormControl-root MuiTextField-root makeStyles-margin-2 makeStyles-withoutLabel-3 makeStyles-textField-4"
+              >
+                <label
+                  class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-filled"
+                  data-shrink="true"
+                >
+                  lastName
+                </label>
+                <div
+                  class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-formControl"
+                >
+                  <input
+                    aria-invalid="false"
+                    class="MuiInputBase-input MuiOutlinedInput-input"
+                    name="lastName"
+                    type="text"
+                    value="test"
+                  />
+                  <fieldset
+                    aria-hidden="true"
+                    class="PrivateNotchedOutline-root-8 MuiOutlinedInput-notchedOutline"
+                  >
+                    <legend
+                      class="PrivateNotchedOutline-legendLabelled-10 PrivateNotchedOutline-legendNotched-11"
+                    >
+                      <span>
+                        lastName
+                      </span>
+                    </legend>
+                  </fieldset>
+                </div>
+              </div>
+              <div
+                class="MuiFormControl-root MuiTextField-root makeStyles-margin-2 makeStyles-withoutLabel-3 makeStyles-textField-4"
+              >
+                <label
+                  class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-filled"
+                  data-shrink="true"
+                >
+                  email
+                </label>
+                <div
+                  class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-formControl"
+                >
+                  <input
+                    aria-invalid="false"
+                    class="MuiInputBase-input MuiOutlinedInput-input"
+                    name="email"
+                    type="text"
+                    value="t@t.com"
+                  />
+                  <fieldset
+                    aria-hidden="true"
+                    class="PrivateNotchedOutline-root-8 MuiOutlinedInput-notchedOutline"
+                  >
+                    <legend
+                      class="PrivateNotchedOutline-legendLabelled-10 PrivateNotchedOutline-legendNotched-11"
+                    >
+                      <span>
+                        email
+                      </span>
+                    </legend>
+                  </fieldset>
+                </div>
+              </div>
+              <div
+                class="MuiFormControl-root MuiTextField-root makeStyles-margin-2 makeStyles-withoutLabel-3 makeStyles-textField-4"
+              >
+                <label
+                  class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined"
+                  data-shrink="false"
+                >
+                  Confirm password
+                </label>
+                <div
+                  class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-formControl"
+                >
+                  <input
+                    aria-invalid="false"
+                    class="MuiInputBase-input MuiOutlinedInput-input"
+                    name="password"
+                    type="text"
+                    value=""
+                  />
+                  <fieldset
+                    aria-hidden="true"
+                    class="PrivateNotchedOutline-root-8 MuiOutlinedInput-notchedOutline"
+                  >
+                    <legend
+                      class="PrivateNotchedOutline-legendLabelled-10"
+                    >
+                      <span>
+                        Confirm password
+                      </span>
+                    </legend>
+                  </fieldset>
+                </div>
+              </div>
+              <button
+                class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-btn-5 MuiButton-containedPrimary"
+                tabindex="0"
+                type="submit"
+              >
+                <span
+                  class="MuiButton-label"
+                >
+                  Update Profile
+                </span>
+                <span
+                  class="MuiTouchRipple-root"
+                />
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

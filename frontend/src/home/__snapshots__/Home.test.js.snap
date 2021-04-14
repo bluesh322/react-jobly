@@ -1,0 +1,80 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="MuiContainer-root MuiContainer-maxWidthMd"
+  >
+    <h2
+      data-testid="resolved"
+    >
+      Jobly
+    </h2>
+    <p>
+      All the jobs in one, convenient place
+    </p>
+    <h2
+      data-testid="loggedInResolved"
+    >
+      Welcome Back testuser
+    </h2>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`matches snapshot when logged out 1`] = `
+<DocumentFragment>
+  <div
+    class="MuiContainer-root MuiContainer-maxWidthMd"
+  >
+    <h2
+      data-testid="resolved"
+    >
+      Jobly
+    </h2>
+    <p>
+      All the jobs in one, convenient place
+    </p>
+    <div
+      class="MuiBox-root MuiBox-root-1"
+    >
+      <a
+        href="/signup"
+      >
+        <button
+          class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiButton-label"
+          >
+            Sign Up
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+      </a>
+      <a
+        href="/login"
+      >
+        <button
+          class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedSecondary"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiButton-label"
+          >
+            Login
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+      </a>
+    </div>
+  </div>
+</DocumentFragment>
+`;

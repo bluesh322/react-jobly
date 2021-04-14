@@ -58,9 +58,9 @@ const LoginForm = ({login}) => {
         <Typography className={classes.text} variant="h3">Enter your username and password</Typography>
         <form onSubmit={handleSubmit}>
             <FormControl>
-                <TextField className={clsx(classes.margin, classes.withoutLabel, classes.textField)} variant="outlined" label="username" name="username" value={formData.username} onChange={handleChange}></TextField>
-                <TextField className={clsx(classes.margin, classes.withoutLabel, classes.textField)} variant="outlined" label="password" name="password" value={formData.password} onChange={handleChange}></TextField>
-                <Button className={classes.btn} variant="contained" color="primary" type="submit">Sign Up!</Button>
+                <TextField id="username" className={clsx(classes.margin, classes.withoutLabel, classes.textField)} variant="outlined" label="username" name="username" value={formData.username} onChange={handleChange}></TextField>
+                <TextField id="password" className={clsx(classes.margin, classes.withoutLabel, classes.textField)} variant="outlined" label="password" name="password" value={formData.password} onChange={handleChange}></TextField>
+                <Button data-testid="submit" className={classes.btn} variant="contained" color="primary" type="submit">Login</Button>
             </FormControl>
         </form>      
         </Box>

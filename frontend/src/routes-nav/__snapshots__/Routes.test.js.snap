@@ -1,0 +1,155 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`logged out views matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="App"
+  >
+    <header
+      class="MuiPaper-root MuiAppBar-root MuiAppBar-positionStatic MuiAppBar-colorPrimary MuiPaper-elevation4"
+    >
+      <div
+        class="MuiToolbar-root MuiToolbar-regular MuiToolbar-gutters"
+      >
+        <div
+          class="MuiContainer-root makeStyles-navDisplayFlex-4 MuiContainer-maxWidthMd"
+        >
+          <button
+            aria-label="home"
+            class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit MuiIconButton-edgeStart"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiIconButton-label"
+            >
+              <a
+                href="/"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"
+                  />
+                </svg>
+              </a>
+            </span>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+          <nav
+            aria-labelledby="main navigation"
+            class="MuiList-root makeStyles-navDisplayFlex-4 MuiList-padding"
+          >
+            <a
+              class="makeStyles-linkText-5"
+              href="/signup"
+            >
+              <div
+                aria-disabled="false"
+                class="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button"
+                role="button"
+                tabindex="0"
+              >
+                <div
+                  class="MuiListItemText-root"
+                >
+                  <span
+                    class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
+                  >
+                    Sign Up
+                  </span>
+                </div>
+                <span
+                  class="MuiTouchRipple-root"
+                />
+              </div>
+            </a>
+            <a
+              class="makeStyles-linkText-5"
+              href="/login"
+            >
+              <div
+                aria-disabled="false"
+                class="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button"
+                role="button"
+                tabindex="0"
+              >
+                <div
+                  class="MuiListItemText-root"
+                >
+                  <span
+                    class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
+                  >
+                    Login
+                  </span>
+                </div>
+                <span
+                  class="MuiTouchRipple-root"
+                />
+              </div>
+            </a>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <div
+      class="MuiContainer-root MuiContainer-maxWidthMd"
+    >
+      <h2
+        data-testid="resolved"
+      >
+        Jobly
+      </h2>
+      <p>
+        All the jobs in one, convenient place
+      </p>
+      <div
+        class="MuiBox-root MuiBox-root-6"
+      >
+        <a
+          href="/signup"
+        >
+          <button
+            class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiButton-label"
+            >
+              Sign Up
+            </span>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+        </a>
+        <a
+          href="/login"
+        >
+          <button
+            class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedSecondary"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiButton-label"
+            >
+              Login
+            </span>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+        </a>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

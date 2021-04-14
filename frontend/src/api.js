@@ -90,8 +90,6 @@ class JoblyApi {
   static async applyForJob(username, id) {
     await this.request(`users/${username}/jobs/${id}`, {}, "post");
   }
-
-  /** Verify password for profile update */
 }
 
 export default JoblyApi;
