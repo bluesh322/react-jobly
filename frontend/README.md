@@ -38,42 +38,42 @@ Location of switch for routes: Route || PrivateRoute *HOC for authentication acc
     without auth.
 
 ## Companies
-state - isLoading, companies
-useEffect (search())
-search - calls JoblyApi.getCompanies(name);
+- state - isLoading, companies
+- useEffect (search())
+- search - calls JoblyApi.getCompanies(name);
     - SearchForm: props={search}
     - CompaniesList ("/companies") -> CompanyCard: props= {key, handle, name, description, numEmployees, logoUrl}
 
 ### CompanyCard
-shows Company informaiton and job list for company
+- shows Company informaiton and job list for company
 
 ## JobList
-state - jobs, isLoading
-useEffect (search())
-search - calls JoblyApi.getJobs(title);
+- state - jobs, isLoading
+- useEffect (search())
+- search - calls JoblyApi.getJobs(title);
     - SearchForm: props={search}
     - JobCardList: props={jobs}
 
 ### JobCardList
-props - jobs
+    - props - jobs
     - JobCardList -> JobCard: props={key, id, title, salary, equity, companyName }
 #### JobCard
-state - applied
-useContext - hasAppliedForJob, applyForJob
-useEffect (setApplied())
+    - state - applied
+    * useContext - hasAppliedForJob, applyForJob 
+    useEffect (setApplied())
     - Shows job information with apply button
 
 ## Auth/Users
     - login ("/login")
-    * LoginForm: props: login
+    * LoginForm: props: login *
         - state: formData
         
     - signup ("/signup")
-    * NewUserForm: props: signup
+    * NewUserForm: props: signup * 
         - state: formData
 
     - profile ("/profile")
-    * UpdateUserForm
+    * UpdateUserForm *
         - useContext - currentUser, setCurrentUser
         - state: formData
 
